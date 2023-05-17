@@ -1,0 +1,155 @@
+body {
+	margin: 0;
+}
+.header {
+	background-color: #c10202;
+	width: 100%;
+	height: 100px;/*
+	position: fixed;
+	z-index: 9999;*/
+}
+.logo-i {
+	width: 100px;
+	margin-left: 200px;
+	float: left;
+}
+.logo-nav {
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	color: white;
+	transition: 0.5s linear;
+}
+.logo-nav:hover {
+	color: black;
+}
+.nav {
+	display: inline;
+	display: flex;
+    justify-content: flex-end;
+}
+.nav-l {
+	width: 40px;
+	margin-right: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: 0.6s linear;
+}
+.nav-l:hover {
+	background-color: #eee;
+    box-shadow: 2px 4px 5px #000;
+}
+.img-nav {
+	width: 30px;
+}
+
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 100px;
+}
+.nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid black;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  padding: 20px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FEFDFD;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active, 
+.submenu a:hover {color: #ddbe86;}
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;  
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+.nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.conteiner {
+	margin: 30px 50px;
+}
+.h1-menu {
+	width: 100%;
+	height: 500px;
+	background-color: #ff00001f;
+	border-radius: 50px;
+}
+.menu-h2 {
+	padding-top: 10px;
+	margin-left: 50px;
+}
+p {
+	margin:10px 20px;
+}
+
+
+
+.foother {
+	margin-top: 600px;
+	width: 100%;
+	height: 150px;
+	background-color: #bbb1b1;
+	display: flex;
+}
+.contac {
+	margin-left: 50px;
+}
+.contac-li {
+	list-style-type: none;
+	margin-top: 0;
+}
+.min {
+	margin-left: 300px;
+	margin-top: 30px;
+	height: 70px;
+}
